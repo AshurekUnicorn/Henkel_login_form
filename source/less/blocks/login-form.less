@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins&display=swap');
+
+
+.login-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 999;
+    width: 370px;
+    text-align: center;
+    padding: 60px 32px;
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+
+.login-form__form {
+
+}
+
+.login-form__title {
+    color: #fff;
+    font-size: 33px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-form__item{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    background: rgba(255,255,255,0.94);
+    
+    &:not(:last-child) {
+        margin: 0 0 20px 0;
+    }
+}
+
+.login-form__item-icon {
+    color: #222;
+    width: 40px;
+    line-height: 45px;
+    padding: 0 10px;
+}
+
+.login-form__input {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #222;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+
+    &--submit {
+        background: #3498db;
+        border: 1px solid #2691d9;
+        color: #fff;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+
+        &:hover {
+            background: #2691d9;
+        }
+    }
+}
+
+
+
