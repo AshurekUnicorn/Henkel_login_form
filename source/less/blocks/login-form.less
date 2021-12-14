@@ -3,8 +3,7 @@
 
 .login-form{
     text-align: center;
-    z-index: 5;
-    filter: blur(0);
+    z-index: 1;
     width: 370px;
     text-align: center;
     padding: 60px 32px;
@@ -24,7 +23,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.login-form__item{
+.login-form__item {
     position: relative;
     height: 45px;
     width: 100%;
@@ -37,21 +36,31 @@
 }
 
 .login-form__item-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     color: #222;
-    width: 40px;
+    width: 30px;
     line-height: 45px;
-    padding: 0 10px;
 }
 
 .login-form__input {
     height: 100%;
     width: 100%;
+    padding-left: 35px;
     background: transparent;
     border: none;
-    outline: none;
     color: #222;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
+    transition: all .4s ease-in;
+
+    &:hover, &:focus {
+        transition: all .4s ease-in;
+        box-shadow:  3px 3px 20px #d5d5d5,
+        -3px -3px 20px #ebebeb;
+    }
 }
 
 .login-form__login-button {
