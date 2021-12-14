@@ -2,21 +2,18 @@
 
 
 .login-form{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
-    z-index: 999;
+    z-index: 5;
+    filter: blur(0);
     width: 370px;
     text-align: center;
     padding: 60px 32px;
     background: rgba(255, 255, 255, 0.04);
     box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
-}
 
-.login-form__form {
-
+    @media (max-width: @mobile-width) {
+        width: 100%;
+    }
 }
 
 .login-form__title {
@@ -55,20 +52,22 @@
     color: #222;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
+}
 
-    &--submit {
-        background: #3498db;
-        border: 1px solid #2691d9;
-        color: #fff;
-        font-size: 18px;
-        letter-spacing: 1px;
-        font-weight: 600;
-        cursor: pointer;
-        font-family: 'Montserrat', sans-serif;
+.login-form__login-button {
+    height: 45px;
+    width: 100%;
+    background: #3498db;
+    border: 1px solid #2691d9;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
 
-        &:hover {
-            background: #2691d9;
-        }
+    &:hover {
+        background: #2691d9;
     }
 }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,38 +17,33 @@
 
   <link rel="stylesheet" href="css/style.min.css">
 
-  <title>LogIn Henkel</title>
+  <title>Войти Henkel</title>
 </head>
 <body class="body">
 
   <header class="header">
     <h1 class="visually-hidden">Henkel Login form</h1>
   </header>
-  
+
   <main class="main">
-      <div class="login-form">
-
-          <p class="login-form__title">Login Form</p>
-
-          <form class="login-form__form" action="#">
-
-              <div class="login-form__item">
-                  <span class="login-form__item-icon fa fa-user"></span>
-                  <input class="login-form__input" type="text" required placeholder="Email or Phone">
-              </div>
-
-              <div class="login-form__item space">
-                  <span class="login-form__item-icon fa fa-lock"></span>
-                  <input class="login-form__input password" type="password" required placeholder="Password">
-              </div>
-
-              <div class="login-form__item">
-                  <input class="login-form__input login-form__input--submit" type="submit" value="LOGIN">
-              </div>
-
-          </form>
-          
-      </div>
+    <div class="login-form">
+      <p class="login-form__title">Введите логин и пароль:</p>
+      
+      <form class="login-form__form" action="#">
+        <lable class="login-form__item">
+          <span class="visually-hidden">Введите свой логин</span>
+          <span class="login-form__item-icon fa fa-user"></span>
+          <input class="login-form__input" type="text" required placeholder="E-mail">
+        </lable>
+        <lable class="login-form__item space">
+          <span class="visually-hidden">Введите пароль</span>
+          <span class="login-form__item-icon fa fa-lock"></span>
+          <input class="login-form__input password" type="password" required placeholder="Пароль">
+        </lable>
+        <button class="login-form__login-button" type="submit">Войти</button>
+      </form>
+      
+    </div>
   </main>
 
   <script src="js/script.min.js"></script>
