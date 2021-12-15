@@ -1,1 +1,54 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Henkel login panel"><meta name="robots" content="none"><meta name="Author" content="Anton Oshurek"><meta name="Copyright" content="Unicorn Poznan"><meta name="Address" content="Poznań"><link rel="stylesheet" href="css/style.min.css"><title>Войти Henkel</title></head><body class="body"><header class="header"><h1 class="visually-hidden">Henkel Login form</h1></header><main class="main"><div class="login-form"><div class="login-form__images"><img class="login-form__img" src="img/henkel-logo__ceresit.png" srcset="img/henkel-logo__ceresit.webp" width="150" height="37px" alt="ceresit"> <img class="login-form__img" src="img/henkel-logo__thomsin.png" srcset="img/henkel-logo__thomsin.webp" width="150" height="37px" alt="thomsit"></div><p class="login-form__title">Введите логин и пароль:</p><form class="login-form__form" action="#"><lable class="login-form__item"><span class="visually-hidden">Введите свой логин</span> <svg class="login-form__item-icon" aria-hidden="true" data-prefix="fas" data-icon="user" class="svg-inline--fa fa-user fa-w-14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#000" d="M224 256a128 128 0 1 0 0-256 128 128 0 0 0 0 256zm89.6 32h-16.7a174.3 174.3 0 0 1-145.8 0h-16.7A134.4 134.4 0 0 0 0 422.4V464a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg> <input class="login-form__input" type="text" required placeholder="E-mail"></lable><lable class="login-form__item space"><span class="visually-hidden">Введите пароль</span> <svg class="login-form__item-icon" aria-hidden="true" data-prefix="fas" data-icon="lock" class="svg-inline--fa fa-lock fa-w-14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#000" d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48a48 48 0 0 0-48 48v192a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V272a48 48 0 0 0-48-48zm-104 0H152v-72a72 72 0 0 1 144 0v72z"/></svg> <input class="login-form__input password" type="password" required placeholder="Пароль"></lable><button class="login-form__login-button" type="submit">Войти</button></form></div></main><script src="js/script.min.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Henkel login panel">
+
+  <meta name="robots" content="none">
+
+  <meta name="Author" content="Unicorn Poznan">
+  <meta name="Copyright" content="Unicorn Poznan">
+  <meta name="Address" content="Poznań">
+
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <title>Войти Henkel</title>
+</head>
+<body class="body">
+
+  <header class="header">
+    <h1 class="visually-hidden">Henkel Login form</h1>
+  </header>
+
+  <main class="main">
+    <div class="login-form">
+      <div class="login-form__images">
+        <img class="login-form__img" src="img/henkel-logo__ceresit.png"
+          srcset="img/henkel-logo__ceresit.webp" width="150" height="37" alt="ceresit">
+      </div>
+      <h2 class="login-form__title">Введите логин и пароль:</h2>
+      <form class="login-form__form" action="#">
+        <label class="login-form__item">
+          <span class="visually-hidden">Введите свой логин</span>
+          <svg class="login-form__item-icon svg-inline--fa fa-user fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="#000" d="M224 256a128 128 0 1 0 0-256 128 128 0 0 0 0 256zm89.6 32h-16.7a174.3 174.3 0 0 1-145.8 0h-16.7A134.4 134.4 0 0 0 0 422.4V464a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/>
+          </svg>
+          <input class="login-form__input" type="text" required placeholder="Логин">
+        </label>
+        <label class="login-form__item space">
+          <span class="visually-hidden">Введите пароль</span>
+          <svg class="login-form__item-icon svg-inline--fa fa-lock fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="lock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="#000" d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48a48 48 0 0 0-48 48v192a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V272a48 48 0 0 0-48-48zm-104 0H152v-72a72 72 0 0 1 144 0v72z"/>
+          </svg>
+          <input class="login-form__input password" type="password" required placeholder="Пароль">
+        </label>
+        <button class="login-form__login-button" type="submit">Войти</button>
+      </form>
+
+    </div>
+  </main>
+</body>
+</html>
