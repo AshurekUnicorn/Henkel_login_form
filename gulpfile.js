@@ -5,10 +5,10 @@ const gulp = require('gulp'),
       postcss = require('gulp-postcss'),
       autoprefixer = require('autoprefixer'),
       sync = require('browser-sync').create(),
-      htmlmin = require('gulp-htmlmin'),
-      csso = require('postcss-csso'),
+      // htmlmin = require('gulp-htmlmin'),
+      // csso = require('postcss-csso'),
       rename = require('gulp-rename'),
-      terser = require('gulp-terser'),
+      // terser = require('gulp-terser'),
       squoosh = require('gulp-libsquoosh'),
       webp = require("gulp-webp"),
       del = require('del');
@@ -21,7 +21,7 @@ const styles = () => {
     .pipe(less())
     .pipe(postcss([
       autoprefixer(),
-      csso()
+      // csso()
     ]))
     .pipe(rename('style.min.css'))
     .pipe(sourcemap.write("."))
@@ -33,19 +33,19 @@ exports.styles = styles;
 //HTML
 const html = () => {
   return gulp.src('source/*.html')
-  .pipe(htmlmin({ collapseWhitespace: true }))
+  // .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build'));
 };
 exports.html = html;
 
-//js terser
-const script = () => {
-    return gulp.src('source/js/script.js')
-      .pipe(terser())
-      .pipe(rename('script.min.js'))
-      .pipe(gulp.dest('build/js'));
-}
-exports.script = script;
+// //js terser
+// const script = () => {
+//     return gulp.src('source/js/script.js')
+//       .pipe(terser())
+//       .pipe(rename('script.min.js'))
+//       .pipe(gulp.dest('build/js'));
+// }
+// exports.script = script;
 
 //squoosh
 const optimizeImages = () => {
@@ -114,7 +114,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series(styles));
-  gulp.watch("source/js/script.js", gulp.series(script));
+  // gulp.watch("source/js/script.js", gulp.series(script));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
@@ -127,7 +127,7 @@ const build = gulp.series(
     styles,
     html,
     createWebp,
-    script,
+    // script,
   ),
 );
 exports.build = build;
@@ -141,7 +141,7 @@ exports.default = gulp.series(
     styles,
     html,
     createWebp,
-    script,
+    // script,
   ),
   gulp.series(
     server,
