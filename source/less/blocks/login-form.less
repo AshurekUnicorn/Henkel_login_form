@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins&display=swap');
 
-
 .login-form{
   text-align: center;
   z-index: 1;
@@ -47,10 +46,7 @@
   width: 100%;
   display: flex;
   background: rgba(255,255,255,0.94);
-
-  &:not(:last-child) {
-    margin: 0 0 20px 0;
-  }
+  margin: 0 0 20px 0;
 }
 
 .login-form__show-password {
@@ -63,19 +59,24 @@
   cursor: pointer;
 }
 
-.closed-woo {
-  color: #fff;
+.closed-icon {
+  opacity: 0.6;
+  background-color: transparent;
+
+  &--open {
+    opacity: 1;
+  }
 }
 
 .closed-eye {
   transition: all 0.5s ease-in;
   opacity: 1;
-}
 
-.closed-eye--open {
-  transition: all 0.5s ease-in;
-  transform: translate(-35%, -35%);
-  opacity: 0;
+  &--open {
+    transition: all 0.5s ease-in;
+    transform: translate(-40%, -35%);
+    opacity: 0;
+  }
 }
 
 .login-form__item-icon {
@@ -99,6 +100,10 @@
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   transition: all .4s ease-in;
+
+  &--password {
+    padding-right: 60px;
+  }
 
   &:hover, &:focus {
     transition: all .4s ease-in;
