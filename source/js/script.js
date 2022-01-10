@@ -2,6 +2,9 @@ const showPassButton = document.querySelector('.login-form__show-password');
 const passwordButton = document.querySelector('.login-form__input--password');
 const closedEye = document.querySelector('.closed-eye');
 const closedIcon = document.querySelector('.closed-icon');
+const inputs = document.querySelectorAll('.login-form__input');
+
+inputs[0].focus();
 
 const caps = document.querySelector('.caps');
 
