@@ -3,10 +3,9 @@ const passwordButton = document.querySelector('.login-form__input--password');
 const closedEye = document.querySelector('.closed-eye');
 const closedIcon = document.querySelector('.closed-icon');
 const inputs = document.querySelectorAll('.login-form__input');
+const caps = document.querySelector('.caps');
 
 inputs[0].focus();
-
-const caps = document.querySelector('.caps');
 
 showPassButton.addEventListener('click', (evt) => {
   evt.preventDefault();
